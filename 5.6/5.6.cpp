@@ -1,20 +1,18 @@
 ﻿// 5.6.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>
-#include <cmath>
 using namespace std;
-double h(const double a, const double b);
+int sum(int x, int y)
+{
+	return x + y;
+}
 int main()
 {
-	double s, t, a;
-
-	cout << "s = "; cin >> s;
-	cout << "t = "; cin >> t;
-	double c = (h(1, s * t) + (h)(t + s, 1));
+	int a, b;
+	cout << "a = ? "; cin >> a;
+	cout << "b = ? "; cin >> b;
+	int c = sum(a, b);
 	cout << "c = " << c << endl;
+	system("pause");
 	return 0;
-}
-double h(const double a, const double b)
-{
-	return ((a * a) - (sin(b) * cos(a)) + b);
 }
